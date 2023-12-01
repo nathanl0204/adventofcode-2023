@@ -1,7 +1,7 @@
 chiffres = ["0","1","2","3","4","5","6","7","8","9"]
 
 def somme_calibration_values(nom_fichier):
-    fichier = open(nom_fichier)
+    fichier = open(nom_fichier,"r")
     L = fichier.readlines()
     L = [mot.rstrip() for mot in L]
     somme = 0
@@ -20,4 +20,4 @@ def somme_calibration_values(nom_fichier):
     return somme
 
 if __name__ == '__main__':
-    print("Réponse : " + str(somme_calibration_values('input.txt')))
+    print("Réponse challenge 1 : " + str(somme_calibration_values('input.txt')))
